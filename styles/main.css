@@ -23,6 +23,9 @@ main {
 
     & .bot-side {
         margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
 
         & .task-item {
             background-color: var(--background-secondary);
@@ -35,6 +38,26 @@ main {
             & #delete-icon {
                 position: absolute;
                 right: 0.875rem;
+            }
+
+            & .check-img {
+                background: url(../assets/icons/check-default.svg) no-repeat center/cover;
+                width: 1.1rem;
+                height: 1.1rem;
+
+                &:hover {
+                    background: url(../assets/icons/check-hover.svg) no-repeat center/cover;
+                }
+
+                & input {
+                    width: 100%;
+                    height: 100%;
+                    appearance: unset;
+                }
+
+                &:has(:checked) {
+                    background: url(../assets/icons/check-selected.svg) no-repeat center/cover;
+                }
             }
         }
 

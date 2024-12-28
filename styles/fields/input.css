@@ -9,15 +9,15 @@
         padding: 0.6875rem 1.125rem;
         border-radius: 0.75rem;
         flex: 1;
-    }
 
-    & button {
-        padding: 0.6875rem 1.125rem;
-        border-radius: 0.75rem;
-        background-color: var(--color-brand);
-        border: none;
-        color: var(--always-white);
-        font: var(--font-label);
+        &:hover {
+            border: 2px solid var(--border-hover);
+        }
+
+        &:focus {
+            border: 2px solid var(--color-brand);
+            outline: none;
+        }
     }
 }
 

@@ -36,10 +36,14 @@ body {
 }
 
 .container {
-    width: 39.187rem;
+    width: 60rem;
     padding: 32px;
     display: block;
     margin: auto;
+}
+
+.model {
+    display: none;
 }
 
 @media (max-width: 425px) {
