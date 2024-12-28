@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    & img {
+        padding-top: 1.56rem;
+    }
+}
+
+@media (max-width: 390px) {
+    header img {
+        display: none;
+    }
+}
