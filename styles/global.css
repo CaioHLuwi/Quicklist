@@ -34,3 +34,16 @@ body {
     background-color: var(--background-primary);
     font: var(--font-paragraph);
 }
+
+.container {
+    width: 39.187rem;
+    padding: 32px;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+}

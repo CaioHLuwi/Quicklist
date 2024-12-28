@@ -14,13 +14,28 @@
         <img src="assets/logo.svg" alt="Logo quicklist">
     </header>
     <main>
-        <div class="top-side">
-            <span> <- Voltar </span>
-            <h1> Compras da semana </h1>
-        </div>
-        <div class="mid-side">
-            <input type="text" placeholder="Adicione um novo item">
-            <button> Adicionar item </button>
+        <div class="container">
+            <div class="top-side">
+                <span> <- Voltar </span>
+                <h1> Compras da semana </h1>
+            </div>
+            <form>
+                <div class="mid-side">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Adicione um novo item">
+                        <button> Adicionar item </button> 
+                    </div>
+                </div>
+                <div class="bot-side">
+                    <div class="model">
+                        <div class="task-item">
+                            <img src="assets/icons/check-default.svg" alt="Check icon">
+                            <span> Pão de Forma</span>
+                            <img id="delete-icon" src="assets/icons/delete.svg" alt="Delete icon">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
 </body>

@@ -1,0 +1,55 @@
+main {
+
+    & .top-side {
+
+        & span {
+            color: var(--color-brand);
+            font: var(--font-link);
+        }
+
+        & h1 {
+            margin-top: 1rem;
+            font: var(--font-title);
+        }
+    }
+    
+    & .mid-side {
+        width: 100%;
+
+        margin-top: 2.75rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    & .bot-side {
+        margin-top: 2.5rem;
+
+        & .task-item {
+            background-color: var(--background-secondary);
+            padding: 0.875rem;
+            border-radius: 0.875rem;
+            display: flex;
+            gap: 1rem;
+            position: relative;
+
+            & #delete-icon {
+                position: absolute;
+                right: 0.875rem;
+            }
+        }
+
+        & .model {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+    
+        & .mid-side {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

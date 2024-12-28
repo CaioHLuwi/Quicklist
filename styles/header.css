@@ -1,13 +1,12 @@
 header {
     display: flex;
     justify-content: center;
-
     & img {
         padding-top: 1.56rem;
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
     header img {
         display: none;
     }
